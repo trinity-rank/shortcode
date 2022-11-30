@@ -1,6 +1,6 @@
 {
     "name": "trinityrank/shortcode",
-    "description": "TailingSlash adds '/' at the end of urls",
+    "description": "Laravel Shortcodes",
     "keywords": [
         "trinityrank",
         "shortcode"

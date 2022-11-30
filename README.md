@@ -2,8 +2,6 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/trinity-rank/shortcode.svg?style=flat-square)](https://packagist.org/packages/trinityrank/shortcode)
 
-Adds URL formatting and redirection with trailing slash to Laravel framework.
-
 ## Installation
 
 ### Step 1: Install package
