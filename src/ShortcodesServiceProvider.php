@@ -28,8 +28,13 @@ class ShortcodesServiceProvider extends ServiceProvider
     {
         Shortcode::enable();
         
+        // Month
         Shortcode::register('month', MonthShortcode::class);
+        Shortcode::register('Month', MonthShortcode::class);
+        // Year
         Shortcode::register('year', YearShortcode::class);
+        Shortcode::register('Year', YearShortcode::class);
+        
     }
 
 }
