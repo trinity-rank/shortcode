@@ -2,10 +2,8 @@
 
 namespace Trinityrank\Shortcode;
 
-use Trinityrank\Shortcode\Shortcodes\MonthShortcode;
-use Trinityrank\Shortcode\Shortcodes\YearShortcode;
 use Illuminate\Support\ServiceProvider;
-use Webwizo\Shortcodes\Facades\Shortcode;
+use Trinityrank\Shortcode\Shortcodes;
 
 class ShortcodesServiceProvider extends ServiceProvider
 {
@@ -26,14 +24,11 @@ class ShortcodesServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        Shortcode::enable();
-        
-        // Month
-        Shortcode::register('month', MonthShortcode::class);
-        Shortcode::register('Month', MonthShortcode::class);
-        // Year
-        Shortcode::register('year', YearShortcode::class);
-        Shortcode::register('Year', YearShortcode::class);
+        Shortcodes::enable();
+
+        foreach(Shortcodes::all() as $shortcode => $class) {
+            Shortcodes::register($shortcode, $class);
+        }
         
     }
 
