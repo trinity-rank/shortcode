@@ -9,7 +9,7 @@
 To get started with Laravel Shortcodes, use Composer command to add the package to your composer.json project's dependencies:
 
 ```bash
-composer require trinityrank/shortcode
+composer require trinity-rank/shortcode
 ```
 
 ### Step 2:
