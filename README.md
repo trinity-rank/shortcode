@@ -13,10 +13,41 @@ composer require trinity-rank/shortcode
 ```
 
 ### Step 2:
+```bash
+    php artisan make:provider DateShortcodesServiceProvider
+```
+After creating ServiceProvider
+```php
+    <?php
 
-That's it. There is no step 2 :)
+    namespace App\Providers;
 
-You can use it like this:
+    use Illuminate\Support\ServiceProvider;
+    use Trinityrank\Shortcodes\Facades\Shortcode;
+
+    class DateShortcodesServiceProvider extends ServiceProvider
+    {
+        public function boot()
+        {
+            Shortcode::enable();
+        }
+
+        public function register()
+        {
+            Shortcode::register('month', function ($atts, $content, $tag) {
+                return date('F'); // Returns full month name (e.g., January)
+            });
+
+            Shortcode::register('year', function ($atts, $content, $tag) {
+                return date('Y'); // Returns full month name (e.g., 2024)
+            });
+        }
+    }
+
+```
+
+
+You can now use shortcodes for month and year like this:
 
 ```bash
 [month]
