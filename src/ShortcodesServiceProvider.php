@@ -42,14 +42,6 @@ class ShortcodesServiceProvider extends ServiceProvider
         $this->registerShortcodeCompiler();
         $this->registerShortcode();
         $this->registerView();
-
-        $this->app->register('month', function ($atts, $content, $tag) {
-            return date('F'); // Returns full month name (e.g., January)
-        });
-
-        $this->app->register('year', function ($atts, $content, $tag) {
-            return date('Y'); // Returns full month name (e.g., 2024)
-        });
     }
 
     /**
