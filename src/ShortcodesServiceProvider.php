@@ -1,6 +1,6 @@
 <?php
 
-namespace Trinityrank\Shortcode;
+namespace Trinityrank\Shortcodes;
 
 use Trinityrank\Shortcodes\View\Factory;
 use Illuminate\Support\ServiceProvider;
