@@ -16,12 +16,11 @@
         }
     ],
     "require": {
-        "php": "^7.4|^8.0",
-        "webwizo/laravel-shortcodes": "^1.0,*"
+        "php": "^7.4|^8.0"
     },
     "autoload": {
         "psr-4": {
-            "Trinityrank\\Shortcode\\": "src"
+            "Trinityrank\\Shortcodes\\": "src"
         }
     },
     "extra": {
