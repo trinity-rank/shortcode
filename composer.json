@@ -20,10 +20,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Trinityrank\\Shortcodes\\": "src",
-            "Trinityrank\\Shortcodes\\Compilers": "src/Compilers",
-            "Trinityrank\\Shortcodes\\View": "src/View",
-            "Trinityrank\\Shortcodes\\Facades": "src/Facades"
+            "Trinityrank\\Shortcodes\\": "src"
         }
     },
     "extra": {
